@@ -1,6 +1,6 @@
 <template>
   <div ref="chartwrapper">
-    <svg id="common-phrases"></svg>
+    <svg id="common-phrases" v-initscroll="cpscroll"></svg>
   </div>
 </template>
 
@@ -47,7 +47,6 @@ export default {
 .bar {
   fill: RGBA(222, 168, 86, 1);
   padding: 10px;
-  transition: fill 0.5s ease;
 }
 
 .bar:hover {
